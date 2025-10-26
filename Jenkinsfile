@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     triggers {
-        // Run automatically every 5 minutes (simulating push detection)
-        pollSCM('H/5 * * * *')
+        // Run automatically every minute (simulating push detection)
+        pollSCM('H/1 * * * *')
     }
 
     stages {
